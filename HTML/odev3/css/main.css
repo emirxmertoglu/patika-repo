@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0c9a9;
+}
+
+.ana-baslik {
+    color: #5e2610;
+    font-style: italic;
+}
+
+.aciklama {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tarif span {
+    font-weight: bold;
+    color: black;
+}
+
+.img {
+    float: left;
+    margin-right: 50px;
+}
+
+.bilgi {
+    display: inline-block;
+    text-decoration: underline;
+    color: #a93102;
+    font-weight: bold;
+}
+
+.bilgi:not(:last-child) {
+    margin-right: 10px;
+}
+
+.bilgi .icerik {
+    color: black;
+    font-weight: normal;
+}
+
+.baslik {
+    background-color: #963102;
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.alt-baslik {
+    color: #963102;
+    font-size: 16px;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.afiyet {
+    font-size: 28px;
+    float: right;
+    letter-spacing: 1.3px;
+}
