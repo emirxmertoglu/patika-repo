@@ -56,5 +56,33 @@ namespace WebApi.Controllers
         //     var book = BookList.Where(book => book.Id == Convert.ToInt32(id)).SingleOrDefault();
         //     return book;
         // }
+
+        [HttpPost]
+        public IActionResult AddBook([FromBody] Book newBook)
+        {
+            var book = BookList.SingleOrDefault(x => x.Title == newBook.Title);
+
+            if (book is not null)
+                return BadRequest();
+
+            BookList.Add(newBook);
+            return Ok();
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateBook(int id, [FromBody] Book updatedBook)
+        {
+            var book = BookList.SingleOrDefault(x => x.Id == id);
+
+            if (book is null)
+                return BadRequest();
+
+            book.GenreId = updatedBook.GenreId != default ? updatedBook.GenreId : book.GenreId;
+            book.PageCount = updatedBook.PageCount != default ? updatedBook.PageCount : book.PageCount;
+            book.PublishDate = updatedBook.PublishDate != default ? updatedBook.PublishDate : book.PublishDate;
+            book.Title = updatedBook.Title != default ? updatedBook.Title : book.Title;
+
+            return Ok();
+        }
     }
 }
