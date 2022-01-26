@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.container {
+    margin: 8px 5% 0px;
+    text-align: center;
+}
+
+.container-1 {
+    background-color: #eee;
+}
+
+.container-1 #search {
+    width: 320px;
+    height: 20px;
+}
+
+button {
+    padding: 2px;
+}
+
+.container-2 {
+    display: flex;
+}
+
+.card {
+    margin: 2px 0;
+}
+
+.card-1 {
+    width: 37%;
+    background-color: #7EE5DA;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-2 {
+    width: 19%;
+    background-color: #70CCC2;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin: 2px 2px;
+    padding: 5px 0;
+}
+
+.card-3 {
+    background-color: #62B3AA;
+    width: 44%;
+    font-size: 13px;
+}
+
+.card-3 #subscribe {
+    height: 20px;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 13px;
+}
