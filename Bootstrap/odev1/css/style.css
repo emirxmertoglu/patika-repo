@@ -11,3 +11,13 @@ body {
   list-style-type: none;
   font-weight: 600;
 }
+
+.card {
+  box-shadow: 0 0 5px 0 rgba(22, 22, 26, 0.25);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: contain;
+}
