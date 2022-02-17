@@ -1,0 +1,9 @@
+.avatar {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.avatar-box {
+  text-align: center;
+}
