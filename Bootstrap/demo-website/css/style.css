@@ -7,3 +7,13 @@
 .avatar-box {
   text-align: center;
 }
+
+.post-description {
+  background-color: whitesmoke;
+  height: 150px;
+}
+
+.post-pagination {
+  display: flex;
+  justify-content: center;
+}
