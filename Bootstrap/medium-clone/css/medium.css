@@ -15,3 +15,7 @@
     font-family: 'Jost', sans-serif;
     font-family: 'PT Serif', serif;
 }
+
+.border-top {
+    border-top: 1px solid rgba(230, 230, 230, 1) !important;
+}
