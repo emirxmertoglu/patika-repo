@@ -1,0 +1,17 @@
+.navbar-brand {
+    width: 162px;
+}
+
+.bg-yellow {
+    background-color: #FFC017;
+}
+
+.border-bottom {
+    border-bottom: solid 1px rgba(41, 41, 41, 1) !important;
+}
+
+.custom-font {
+    font-family: 'Bangers', cursive;
+    font-family: 'Jost', sans-serif;
+    font-family: 'PT Serif', serif;
+}
