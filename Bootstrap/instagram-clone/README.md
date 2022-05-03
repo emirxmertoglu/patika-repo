@@ -7,3 +7,4 @@ Bootstrap ile Instagram klonu projesi.
 - Font Awesome v5.15.1
 
 ## Ekran Görüntüleri
+![Preview](https://i.imgur.com/eCVwtSb.png)
