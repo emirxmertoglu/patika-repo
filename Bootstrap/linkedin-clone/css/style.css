@@ -161,3 +161,7 @@ li {
   border-radius: 50%;
   margin-top: 8px;
 }
+
+button.follow {
+  font-size: .75rem;
+}
