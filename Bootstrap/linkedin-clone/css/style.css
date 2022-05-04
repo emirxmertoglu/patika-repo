@@ -1,5 +1,5 @@
 .navbarbg {
-  height: 55px;
+  height: 70px;
   background-color: white;
 }
 
@@ -138,4 +138,29 @@ button.ref:hover {
 
 .nav-link-inline-wrapper:hover .menutext {
   color: black;
+}
+
+.main-content {
+  margin-top: 100px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link-inline-wrapper::before {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link-inline-wrapper img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 8px;
 }
