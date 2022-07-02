@@ -68,3 +68,18 @@ Eğer bir branchi silmek istersek
 ```shell
 git branch -D branch_ismi // branch_ismi adındaki branchi siler
 ```
+
+Eğer yaptığımız değişiklikleri geçici olarak saklamak istersek
+
+```shell
+git stash // yaptığımız değişiklikleri saklar son commite döner
+
+git stash list // saklanan değişikliklerin listesini gösterir
+
+git stash clear // saklanan değişiklikleri temizler
+
+git stash pop // saklanan değişiklikleri geri getirir ve saklama listesin temizler
+
+git stash apply stash_id // stash listesindeki stash_id IDsine sahip değişiklikleri getirir,
+// poptan farkı; apply listyeyi temizlemez
+```
