@@ -83,3 +83,21 @@ git stash pop // saklanan değişiklikleri geri getirir ve saklama listesin temi
 git stash apply stash_id // stash listesindeki stash_id IDsine sahip değişiklikleri getirir,
 // poptan farkı; apply listyeyi temizlemez
 ```
+
+Eğer branchleri birleştirmek istersek,
+
+```shell
+git merge branch_ismi // aktif branch ile branch_ismi branchini birleştirir ve commitleri aktarır
+
+git merge --squash branch_ismi // aktif branch ile branch_ismi branchini birleştirir ama commitleri aktarmaz,
+// merge işlemini commitlemeyi bize bırakır
+
+git merge --abort // eğer merge sonrası conflict çıkarsa yapılan merge işlemini geri alır
+
+// alternatif olarak
+
+git rebase branch_ismi // aktif branch ile branch_ismi branchini birleştirir,
+// mergeden farkı tüm historyi tek bir branch altında toplar, daha sade bir history sunar.
+// bir ekiple çalışıyorsak merge işlemi ile branch birleştirmek daha önemlidir,
+// çünkü revert etmek rebase işleminde daha bir zahmetli olacaktır
+```
