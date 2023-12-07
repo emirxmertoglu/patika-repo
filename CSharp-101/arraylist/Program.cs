@@ -52,6 +52,11 @@ foreach (var item in intList)
     Console.WriteLine(item);
 }
 
+// BinarySearch
+Console.WriteLine("**** BinarySearch ****");
+int index = intList.BinarySearch(33);
+Console.WriteLine(index);
+
 // Clear
 Console.WriteLine("**** Clear ****");
 intList.Clear();
