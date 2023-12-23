@@ -47,26 +47,44 @@ namespace collections_question_1
             primeNumber.Sort();
             primeNumber.Reverse();
 
-            Console.WriteLine("Prime Numbers: ");
+            Console.Write("Prime Numbers: ");
             foreach (var item in primeNumber)
             {
                 Console.Write("{0}, ", item);
             }
 
+            Console.WriteLine("\n*******");
+
             // Non-Prime Numbers
+
 
             nonPrimeNumber.Sort();
             nonPrimeNumber.Reverse();
-            Console.WriteLine("Non-Prime Numbers: ");
+            Console.Write("Non-Prime Numbers: ");
             foreach (var item in nonPrimeNumber)
             {
                 Console.Write("{0}, ", item);
             }
 
+            Console.WriteLine("\n*******");
+
             // Prime Numbers Count & Average
             Console.WriteLine($"Prime Numbers Count = {primeNumber.Count}");
-            int average = primeNumber.ToArray().Aggregate(0, (sum, x) => sum + int.Parse(x), x => x / primeNumber.Count);
-            Console.WriteLine($"Prime Numbers Average = {average}");
+            int sum = 0;
+            foreach (int x in primeNumber)
+            {
+                sum += x;
+            }
+            Console.WriteLine($"Prime Numbers Average = {sum / primeNumber.Count}");
+
+            // Non-Prime Numbers Count & Average
+            Console.WriteLine($"Non-Prime Numbers Count = {nonPrimeNumber.Count}");
+            int sum2 = 0;
+            foreach (int x in nonPrimeNumber)
+            {
+                sum2 += x;
+            }
+            Console.WriteLine($"Non-Prime Numbers Average = {sum2 / nonPrimeNumber.Count}");
 
 
 
